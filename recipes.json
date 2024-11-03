@@ -1,0 +1,243 @@
+{
+    "Iron plate": {
+        "type": "base_material"
+    },
+    "Copper plate": {
+        "type": "base_material"
+    },
+    "Construction robot": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Electronic circuit": 2,
+            "Flying robot frame": 1
+        }
+    },
+    "Electronic circuit": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 1,
+            "Copper cable": 3
+        }
+    },
+    "Copper cable": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Copper plate": 0.5
+        }
+    },
+    "Flying robot frame": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Steel plate": 1,
+            "Battery": 2,
+            "Electronic circuit": 3,
+            "Electric engine unit": 1
+        }
+
+    },
+    "Steel plate": {
+        "type": "base_material"
+    },
+    "Battery": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 1,
+            "Copper plate": 1,
+            "Sulfuric acid": 20
+        }
+    },
+    "Sulfuric acid": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 0.02,
+            "Sulfur": 0.1,
+            "Water": 2
+        }
+    },
+    "Sulfur": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Water": 15,
+            "Petroleum gas": 15
+        }
+    },
+    "Electric engine unit": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Electronic circuit": 2,
+            "Engine unit": 1,
+            "Lubricant": 15
+        }
+    },
+    "Lubricant": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Heavy oil": 1
+        }
+
+    },
+    "Heavy oil": {
+        "type": "base_material"
+    },
+    "Engine unit": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Steel plate": 1,
+            "Iron gear wheel": 1,
+            "Pipe": 2
+        }
+    },
+    "Iron gear wheel": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 2
+        }
+    },
+    "Pipe": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 1
+        }
+    },
+    "Logistic robot": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Advanced circuit": 2,
+            "Flying robot frame": 1
+        }
+    },
+    "Advanced circuit": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Plastic bar": 2,
+            "Copper cable": 4,
+            "Electronic circuit": 2
+        }
+    },
+    "Plastic bar": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Coal": 0.5,
+            "Petroleum gas": 10
+        }
+
+    },
+    "Coal": {
+        "type": "base_material"
+    },
+    "Petroleum gas": {
+        "type": "base_material"
+    },
+    "Water": {
+        "type": "base_material"
+    },
+    "Crude oil": {
+        "type": "base_material"
+    },
+    "Roboport": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Steel plate": 45,
+            "Iron gear wheel": 45,
+            "Advanced circuit": 45
+        }
+    },
+    "Substation": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Steel plate": 10,
+            "Copper cable": 6,
+            "Advanced circuit": 5
+        }
+    },
+    "Rail": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Stone": 0.5,
+            "Steel plate": 0.5,
+            "Iron stick": 0.5
+        }
+    },
+    "Stone": {
+        "type": "base_material"
+    },
+    "Iron stick": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 0.5
+        }
+    },
+    "Electric furnace": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Steel plate": 10,
+            "Advanced circuit": 5,
+            "Stone brick": 10
+        }
+    },
+    "Stone brick": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Stone": 2
+        }
+    },
+    "Productivity module": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Electronic circuit": 5,
+            "Advanced circuit": 5
+        }
+    },
+    "Production science pack": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Rail": 10,
+            "Electric furnace": 0.3333333333333333,
+            "Productivity module": 0.3333333333333333
+        }
+    },
+    "Fast transport belt": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron gear wheel": 5,
+            "Transport belt": 1
+        }
+    },
+    "Transport belt": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 0.5,
+            "Iron gear wheel": 0.5
+        }
+    },
+    "Fast underground belt": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron gear wheel": 20,
+            "Underground belt": 1
+        }
+    },
+    "Underground belt": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 5,
+            "Transport belt": 2.5
+        }
+    },
+    "Fast splitter": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron gear wheel": 10,
+            "Electronic circuit": 10,
+            "Splitter": 1
+        }
+    },
+    "Splitter": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 5,
+            "Electronic circuit": 5,
+            "Transport belt": 4
+        }
+    }
+}
