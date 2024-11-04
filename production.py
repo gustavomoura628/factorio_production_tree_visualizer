@@ -14,7 +14,7 @@ def build_tree_recursive(tree, total_resources, parent, item, quantity):
     node_id = parent+"_"+item
 
     # Fix decimal weirdness
-    qty_rounded = round(quantity+0.004,2)
+    qty_rounded = round(quantity+0.003,2)
     if isinstance(qty_rounded, float) and qty_rounded.is_integer():
         qty_display = int(qty_rounded)
     else:
@@ -47,7 +47,7 @@ def build_tree(item, quantity):
     tree.create_node(f"temporary string", "total_resources")
 
     # Fix decimal weirdness
-    qty_rounded = round(quantity+0.004,2)
+    qty_rounded = round(quantity+0.003,2)
     if isinstance(qty_rounded, float) and qty_rounded.is_integer():
         qty_display = int(qty_rounded)
     else:
@@ -77,7 +77,7 @@ def build_tree(item, quantity):
     total_resources_str = "Total Resources for building "+str(quantity)+" "+item+"\n"
     for item in total_resources:
         # Fix decimal weirdness
-        qty_rounded = round(total_resources[item]+0.004,2)
+        qty_rounded = round(total_resources[item]+0.003,2)
         if isinstance(qty_rounded, float) and qty_rounded.is_integer():
             qty_display = int(qty_rounded)
         else:

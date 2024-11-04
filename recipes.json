@@ -239,5 +239,110 @@
             "Electronic circuit": 5,
             "Transport belt": 4
         }
+    },
+    "Laser turret": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Steel plate": 20,
+            "Battery": 12,
+            "Electronic circuit": 20
+        }
+    },
+    "Repair pack": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron gear wheel": 2,
+            "Electronic circuit": 2
+        }
+    },
+    "Utility science pack": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Processing unit": 2,
+            "Flying robot frame": 1,
+            "Low density structure": 3
+        }
+    },
+    "Processing unit": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Electronic circuit": 20,
+            "Advanced circuit": 2,
+            "Sulfuric acid": 5
+        }
+    },
+    "Low density structure": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Copper plate": 20,
+            "Steel plate": 2,
+            "Plastic bar": 5
+        }
+    },
+    "Productivity module 3": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Advanced circuit": 5,
+            "Processing unit": 5,
+            "Productivity module 2": 4
+        }
+    },
+    "Productivity module 2": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Advanced circuit": 5,
+            "Processing unit": 5,
+            "Productivity module": 4
+        }
+    },
+    "Satellite": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Processing unit": 100,
+            "Low density structure": 100,
+            "Rocket fuel": 50,
+            "Solar panel": 100,
+            "Accumulator": 100,
+            "Radar": 5
+        }
+    },
+    "Rocket fuel": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Solid fuel": 10,
+            "Light oil": 10
+        }
+    },
+    "Solid fuel": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Petroleum gas": 20
+        }
+    },
+    "Light oil": {
+        "type": "base_material"
+    },
+    "Solar panel": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Copper plate": 5,
+            "Steel plate": 5,
+            "Electronic circuit": 15
+        }
+    },
+    "Accumulator": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 2,
+            "Battery": 5
+        }
+    },
+    "Radar": {
+        "type": "manufactured_item",
+        "ingredients": {
+            "Iron plate": 10,
+            "Iron gear wheel": 5,
+            "Electronic circuit": 5
+        }
     }
 }
