@@ -1,32 +1,71 @@
 {
+    "Iron ore": {
+        "type": "base_material",
+        "stack_size": 50
+    },
     "Iron plate": {
-        "type": "base_material"
+        "type": "intermediate_product",
+        "machine_type": ["Stone furnace", "Steel furnace", "Electric furnace"],
+        "crafting_time": 3.2,
+        "output_amount": 1,
+        "stack_size": 100,
+        "ingredients": {
+            "Iron ore": 1
+        }
+    },
+    "Copper ore": {
+        "type": "base_material",
+        "stack_size": 50
     },
     "Copper plate": {
-        "type": "base_material"
+        "type": "intermediate_product",
+        "machine_type": ["Stone furnace", "Steel furnace", "Electric furnace"],
+        "crafting_time": 3.2,
+        "output_amount": 1,
+        "stack_size": 100,
+        "ingredients": {
+            "Copper ore": 1
+        }
     },
     "Construction robot": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Electronic circuit": 2,
             "Flying robot frame": 1
         }
     },
     "Electronic circuit": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 200,
+
         "ingredients": {
             "Iron plate": 1,
             "Copper cable": 3
         }
     },
     "Copper cable": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 2,
+        "stack_size": 200,
         "ingredients": {
-            "Copper plate": 0.5
+            "Copper plate": 1
         }
     },
     "Flying robot frame": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 20,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Steel plate": 1,
             "Battery": 2,
@@ -36,10 +75,18 @@
 
     },
     "Steel plate": {
-        "type": "base_material"
+        "type": "intermediate_product",
+        "machine_type": ["Stone furnace", "Steel furnace", "Electric furnace"],
+        "crafting_time": 16,
+        "output_amount": 1,
+        "stack_size": 100
     },
     "Battery": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Chemical plant"],
+        "crafting_time": 4,
+        "output_amount": 1,
+        "stack_size": 200,
         "ingredients": {
             "Iron plate": 1,
             "Copper plate": 1,
@@ -47,22 +94,34 @@
         }
     },
     "Sulfuric acid": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Chemical plant"],
+        "crafting_time": 1,
+        "output_amount": 50,
+        "stack_size": 1,
         "ingredients": {
-            "Iron plate": 0.02,
-            "Sulfur": 0.1,
-            "Water": 2
+            "Iron plate": 1,
+            "Sulfur": 5,
+            "Water": 100
         }
     },
     "Sulfur": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Chemical plant"],
+        "crafting_time": 1,
+        "output_amount": 2,
+        "stack_size": 50,
         "ingredients": {
-            "Water": 15,
-            "Petroleum gas": 15
+            "Water": 30,
+            "Petroleum gas": 30
         }
     },
     "Electric engine unit": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 10,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Electronic circuit": 2,
             "Engine unit": 1,
@@ -70,17 +129,26 @@
         }
     },
     "Lubricant": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Chemical plant"],
+        "crafting_time": 1,
+        "output_amount": 10,
+        "stack_size": 1,
         "ingredients": {
-            "Heavy oil": 1
+            "Heavy oil": 10
         }
 
     },
     "Heavy oil": {
-        "type": "base_material"
+        "type": "base_material",
+        "stack_size": 1
     },
     "Engine unit": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 10,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Steel plate": 1,
             "Iron gear wheel": 1,
@@ -88,26 +156,42 @@
         }
     },
     "Iron gear wheel": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 100,
         "ingredients": {
             "Iron plate": 2
         }
     },
     "Pipe": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 100,
         "ingredients": {
             "Iron plate": 1
         }
     },
     "Logistic robot": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Advanced circuit": 2,
             "Flying robot frame": 1
         }
     },
     "Advanced circuit": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 6,
+        "output_amount": 1,
+        "stack_size": 200,
         "ingredients": {
             "Plastic bar": 2,
             "Copper cable": 4,
@@ -115,27 +199,39 @@
         }
     },
     "Plastic bar": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Chemical plant"],
+        "crafting_time": 1,
+        "output_amount": 2,
+        "stack_size": 100,
         "ingredients": {
-            "Coal": 0.5,
-            "Petroleum gas": 10
+            "Coal": 1,
+            "Petroleum gas": 20
         }
 
     },
     "Coal": {
-        "type": "base_material"
+        "type": "base_material",
+        "stack_size": 50
     },
     "Petroleum gas": {
-        "type": "base_material"
+        "type": "base_material",
+        "stack_size": 1
     },
     "Water": {
-        "type": "base_material"
+        "type": "base_material",
+        "stack_size": 1
     },
     "Crude oil": {
-        "type": "base_material"
+        "type": "base_material",
+        "stack_size": 1
     },
     "Roboport": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 5,
+        "output_amount": 1,
+        "stack_size": 10,
         "ingredients": {
             "Steel plate": 45,
             "Iron gear wheel": 45,
@@ -143,7 +239,11 @@
         }
     },
     "Substation": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Steel plate": 10,
             "Copper cable": 6,
@@ -151,24 +251,37 @@
         }
     },
     "Rail": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 2,
+        "stack_size": 100,
         "ingredients": {
-            "Stone": 0.5,
-            "Steel plate": 0.5,
-            "Iron stick": 0.5
+            "Stone": 1,
+            "Steel plate": 1,
+            "Iron stick": 1
         }
     },
     "Stone": {
-        "type": "base_material"
+        "type": "base_material",
+        "stack_size": 50
     },
     "Iron stick": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 2,
+        "stack_size": 100,
         "ingredients": {
-            "Iron plate": 0.5
+            "Iron plate": 1
         }
     },
     "Electric furnace": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 5,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Steel plate": 10,
             "Advanced circuit": 5,
@@ -176,56 +289,88 @@
         }
     },
     "Stone brick": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Stone furnace", "Steel furnace", "Electric furnace"],
+        "crafting_time": 3.2,
+        "output_amount": 1,
+        "stack_size": 100,
         "ingredients": {
             "Stone": 2
         }
     },
     "Productivity module": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 15,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Electronic circuit": 5,
             "Advanced circuit": 5
         }
     },
     "Production science pack": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 21,
+        "output_amount": 3,
+        "stack_size": 200,
         "ingredients": {
-            "Rail": 10,
-            "Electric furnace": 0.3333333333333333,
-            "Productivity module": 0.3333333333333333
+            "Rail": 30,
+            "Electric furnace": 1,
+            "Productivity module": 1
         }
     },
     "Fast transport belt": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 100,
         "ingredients": {
             "Iron gear wheel": 5,
             "Transport belt": 1
         }
     },
     "Transport belt": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 2,
+        "stack_size": 100,
         "ingredients": {
-            "Iron plate": 0.5,
-            "Iron gear wheel": 0.5
+            "Iron plate": 1,
+            "Iron gear wheel": 1
         }
     },
     "Fast underground belt": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 2,
+        "output_amount": 2,
+        "stack_size": 50,
         "ingredients": {
-            "Iron gear wheel": 20,
-            "Underground belt": 1
+            "Iron gear wheel": 40,
+            "Underground belt": 2
         }
     },
     "Underground belt": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 1,
+        "output_amount": 2,
+        "stack_size": 50,
         "ingredients": {
-            "Iron plate": 5,
-            "Transport belt": 2.5
+            "Iron plate": 10,
+            "Transport belt": 5
         }
     },
     "Fast splitter": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 2,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Iron gear wheel": 10,
             "Electronic circuit": 10,
@@ -233,7 +378,11 @@
         }
     },
     "Splitter": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 1,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Iron plate": 5,
             "Electronic circuit": 5,
@@ -241,7 +390,11 @@
         }
     },
     "Laser turret": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 20,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Steel plate": 20,
             "Battery": 12,
@@ -249,14 +402,22 @@
         }
     },
     "Repair pack": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 100,
         "ingredients": {
             "Iron gear wheel": 2,
             "Electronic circuit": 2
         }
     },
     "Utility science pack": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 21,
+        "output_amount": 3,
+        "stack_size": 200,
         "ingredients": {
             "Processing unit": 2,
             "Flying robot frame": 1,
@@ -264,7 +425,11 @@
         }
     },
     "Processing unit": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 10,
+        "output_amount": 1,
+        "stack_size": 100,
         "ingredients": {
             "Electronic circuit": 20,
             "Advanced circuit": 2,
@@ -272,7 +437,11 @@
         }
     },
     "Low density structure": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 15,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Copper plate": 20,
             "Steel plate": 2,
@@ -280,7 +449,11 @@
         }
     },
     "Productivity module 3": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 60,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Advanced circuit": 5,
             "Processing unit": 5,
@@ -288,42 +461,48 @@
         }
     },
     "Productivity module 2": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 30,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Advanced circuit": 5,
             "Processing unit": 5,
             "Productivity module": 4
         }
     },
-    "Satellite": {
-        "type": "manufactured_item",
-        "ingredients": {
-            "Processing unit": 100,
-            "Low density structure": 100,
-            "Rocket fuel": 50,
-            "Solar panel": 100,
-            "Accumulator": 100,
-            "Radar": 5
-        }
-    },
     "Rocket fuel": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 15,
+        "output_amount": 1,
+        "stack_size": 20,
         "ingredients": {
             "Solid fuel": 10,
             "Light oil": 10
         }
     },
     "Solid fuel": {
-        "type": "manufactured_item",
+        "type": "intermediate_product",
+        "machine_type": ["Chemical plant"],
+        "crafting_time": 1,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Petroleum gas": 20
         }
     },
     "Light oil": {
-        "type": "base_material"
+        "type": "base_material",
+        "stack_size": 1
     },
     "Solar panel": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 10,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Copper plate": 5,
             "Steel plate": 5,
@@ -331,18 +510,73 @@
         }
     },
     "Accumulator": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 10,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Iron plate": 2,
             "Battery": 5
         }
     },
     "Radar": {
-        "type": "manufactured_item",
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
         "ingredients": {
             "Iron plate": 10,
             "Iron gear wheel": 5,
             "Electronic circuit": 5
+        }
+    },
+    "Assembly machine 3": {
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
+        "ingredients": {
+            "Assembly machine 2": 2,
+            "Speed module": 4
+        }
+    },
+    "Assembly machine 2": {
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
+        "ingredients": {
+            "Steel plate": 2,
+            "Iron gear wheel": 5,
+            "Electronic circuit": 3,
+            "Assembly machine 1": 1
+        }
+    },
+    "Assembly machine 1": {
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
+        "ingredients": {
+            "Iron plate": 9,
+            "Iron gear wheel": 5,
+            "Electronic circuit": 3
+        }
+    },
+    "Speed module": {
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 15,
+        "output_amount": 1,
+        "stack_size": 50,
+        "ingredients": {
+            "Electronic circuit": 5,
+            "Advanced circuit": 5
         }
     }
 }

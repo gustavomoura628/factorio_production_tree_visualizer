@@ -1,0 +1,37 @@
+{
+        "Assembly machine 1": {
+            "type": "assembler",
+            "crafting_speed": 0.5,
+            "module_slots": 0
+		},
+        "Assembly machine 2": {
+            "type": "assembler",
+            "crafting_speed": 0.75,
+            "module_slots": 2
+		},
+        "Assembly machine 3": {
+            "type": "assembler",
+            "crafting_speed": 1.25,
+            "module_slots": 4
+		},
+        "Stone furnace": {
+            "type": "furnace",
+            "crafting_speed": 1,
+            "module_slots": 0
+		},
+        "Steel furnace": {
+            "type": "furnace",
+            "crafting_speed": 2,
+            "module_slots": 0
+		},
+        "Electric furnace": {
+            "type": "furnace",
+            "crafting_speed": 2,
+            "module_slots": 2
+		},
+        "Chemical plant": {
+            "type": "chemical_plant",
+            "crafting_speed": 1,
+            "module_slots": 3
+        }
+}

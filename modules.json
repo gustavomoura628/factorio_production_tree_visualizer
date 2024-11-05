@@ -1,0 +1,62 @@
+{
+    "None": {
+        "Energy consumption": 0,
+        "Speed": 0,
+        "Productivity": 0,
+        "Pollution": 0
+    },
+    "Speed module": {
+        "Energy consumption": 0.5,
+        "Speed": 0.2,
+        "Productivity": 0,
+        "Pollution": 0
+    },
+    "Speed module 2": {
+        "Energy consumption": 0.6,
+        "Speed": 0.3,
+        "Productivity": 0,
+        "Pollution": 0
+    },
+    "Speed module 3": {
+        "Energy consumption": 0.7,
+        "Speed": 0.5,
+        "Productivity": 0,
+        "Pollution": 0
+    },
+    "Efficiency module": {
+        "Energy consumption": -0.3,
+        "Speed": 0,
+        "Productivity": 0,
+        "Pollution": 0
+    },
+    "Efficiency module 2": {
+        "Energy consumption": -0.4,
+        "Speed": 0,
+        "Productivity": 0,
+        "Pollution": 0
+    },
+    "Efficiency module 3": {
+        "Energy consumption": -0.5,
+        "Speed": 0,
+        "Productivity": 0,
+        "Pollution": 0
+    },
+    "Productivity module": {
+        "Energy consumption": 0.4,
+        "Speed": -0.05,
+        "Productivity": 0.04,
+        "Pollution": 0.05
+    },
+    "Productivity module 2": {
+        "Energy consumption": 0.6,
+        "Speed": -0.1,
+        "Productivity": 0.06,
+        "Pollution": 0.07
+    },
+    "Productivity module 3": {
+        "Energy consumption": 0.8,
+        "Speed": -0.15,
+        "Productivity": 0.10,
+        "Pollution": 0.10
+    }
+}
