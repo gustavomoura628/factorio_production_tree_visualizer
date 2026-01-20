@@ -235,7 +235,7 @@ output_path = "output/output"
 tree = build_tree(selected_item, quantity)
 
 # Show tree on terminal
-tree.to_graphviz(shape="rectangle")
+tree.show()
 
 # Save tree as dot file
 tree.to_graphviz(filename=output_path+".dot", shape="rectangle")
