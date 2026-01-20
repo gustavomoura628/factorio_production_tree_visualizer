@@ -211,15 +211,24 @@ def build_tree(item, quantity):
 # Figure out the file name and clean up the characters a bit
 import os
 import shutil
-filename=selected_item+"_x"+str(quantity)
-filename = ''.join(c if c!=' ' else '_' for c in filename)
-filename = ''.join(c if c!='.' else '-' for c in filename)
+
+history_name = selected_item+"_x"+str(quantity)
+history_name = ''.join(c if c!=' ' else '_' for c in history_name)
+history_name = ''.join(c if c!='.' else '-' for c in history_name)
+
+# Create output folder
 if not os.path.isdir("output"):
     os.mkdir("output")
-if os.path.isdir("output/"+filename):
-    shutil.rmtree("output/"+filename)
-os.mkdir("output/"+filename)
-filename="output/"+filename+"/"+filename
+
+# Create history folder
+if not os.path.isdir("history"):
+    os.mkdir("history")
+if os.path.isdir("history/"+history_name):
+    shutil.rmtree("history/"+history_name)
+os.mkdir("history/"+history_name)
+
+history_path = "history/"+history_name+"/"+history_name
+output_path = "output/output"
 
 
 # Build tree
@@ -229,16 +238,21 @@ tree = build_tree(selected_item, quantity)
 tree.to_graphviz(shape="rectangle")
 
 # Save tree as dot file
-tree.to_graphviz(filename=filename+".dot", shape="rectangle")
+tree.to_graphviz(filename=output_path+".dot", shape="rectangle")
 
 # Save png of tree
 import pydot
 
-(graph,) = pydot.graph_from_dot_file(filename+'.dot')
-graph.write_png(filename+'.png')
+(graph,) = pydot.graph_from_dot_file(output_path+'.dot')
+graph.write_png(output_path+'.png')
 
 # Convert tree to drawio xml
 from graphviz2drawio import graphviz2drawio
-xml = graphviz2drawio.convert(filename+".dot")
-with open(filename+".xml","w") as file:
+xml = graphviz2drawio.convert(output_path+".dot")
+with open(output_path+".xml","w") as file:
     file.write(xml)
+
+# Copy to history
+shutil.copy(output_path+".dot", history_path+".dot")
+shutil.copy(output_path+".png", history_path+".png")
+shutil.copy(output_path+".xml", history_path+".xml")

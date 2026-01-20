@@ -27,6 +27,95 @@
             "Copper ore": 1
         }
     },
+    "Automation science pack": {
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 5,
+        "output_amount": 1,
+        "stack_size": 200,
+        "ingredients": {
+            "Copper plate": 1,
+            "Iron gear wheel": 1
+        }
+    },
+    "Inserter": {
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 50,
+        "ingredients": {
+            "Electronic circuit": 1,
+            "Iron gear wheel": 1,
+            "Iron plate": 1
+        }
+    },
+    "Logistic science pack": {
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 6,
+        "output_amount": 1,
+        "stack_size": 200,
+        "ingredients": {
+            "Transport belt": 1,
+            "Inserter": 1
+        }
+    },
+    "Firearm magazine": {
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 1,
+        "output_amount": 1,
+        "stack_size": 100,
+        "ingredients": {
+            "Iron plate": 4
+        }
+    },
+    "Piercing rounds magazine": {
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 6,
+        "output_amount": 2,
+        "stack_size": 100,
+        "ingredients": {
+            "Firearm magazine": 2,
+            "Steel plate": 1,
+            "Copper plate": 2
+        }
+    },
+    "Grenade": {
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 8,
+        "output_amount": 1,
+        "stack_size": 100,
+        "ingredients": {
+            "Coal": 10,
+            "Iron plate": 5
+        }
+    },
+    "Wall": {
+        "type": "intermediate_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 0.5,
+        "output_amount": 1,
+        "stack_size": 100,
+        "ingredients": {
+            "Stone brick": 5
+        }
+    },
+    "Military science pack": {
+        "type": "final_product",
+        "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
+        "crafting_time": 10,
+        "output_amount": 2,
+        "stack_size": 200,
+        "ingredients": {
+            "Piercing rounds magazine": 1,
+            "Grenade": 1,
+            "Wall": 2
+        }
+    },
     "Construction robot": {
         "type": "final_product",
         "machine_type": ["Assembly machine 1", "Assembly machine 2", "Assembly machine 3"],
